@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900|Merriweather:300,300i,900" rel="stylesheet">
+  </head>
+  <body class="{% if page.slug %}{{ page.slug }}{% else %} {% endif %}{% if page.url == '/' %}homepage{% endif %} {% if page.url == '/about/' %}about-page{% endif %}">
+    </div>
+    <header class="site-header">
+      <div class="info">
+        <a href="/" class="site-lead">JSMonk</a> is a curated collection of links to tutorials and articles on javaScript from around the web.
+      </div>
+    </header>
+    <div class="page-content">
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
