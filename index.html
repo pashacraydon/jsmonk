@@ -8,10 +8,17 @@ layout: default
     {% for post in paginator.posts %}
       <li>
         <h2>
-          <a href="{{ post.link }}">{{ post.title | escape }}</a>
+          <a href="{{ post.link }}">
+          {{ post.title | escape }}
+          </a>
+          {% if post.topic %}
+            <span class="topic {{ post.topic }}">
+              {{ post.topic }}
+            </span>
+          {% endif %}
         </h2>
         {% if post.author %}
-        <p class="author">by {{ post.author }}</p>
+        <p class="author">by {{ post.author }} </p>
         {% endif %}
         <span class="excerpt">{{ post.excerpt }}</span>
       </li>
