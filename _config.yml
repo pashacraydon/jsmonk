@@ -17,8 +17,8 @@ title: JSMonk
 email: pashacraydon@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   JSMonk is a webzine on javaScript
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://github.com/pashacraydon/jsmonk" # the base hostname & protocol for your site
+baseurl: "/jsmonk" # the subpath of your site, e.g. /blog
+url: "https://github.com/pashacraydon/jsmonk/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
